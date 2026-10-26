@@ -1,19 +1,31 @@
 CS 210 Project Three: Corner Grocer
+
 Project Summary
+
 The Corner Grocer project is a C++ application that analyzes grocery purchase records and determines how often each item was purchased during the day. The program reads grocery items from a text file and stores the number of times each item appears. The goal of the project was to help Corner Grocer understand purchasing patterns so the store could make better decisions about organizing its produce section.
 The program provides four menu options. The user can search for the frequency of a specific grocery item, display a complete list of all grocery items and their frequencies, display the same information as a text-based histogram, or exit the program. The program also automatically creates a frequency.dat file that stores a backup of all item frequencies.
+
 What I Did Well
+
 One part of the project that I did particularly well was organizing the program using object-oriented programming. I created a GroceryTracker class that manages the grocery data and separates the program's responsibilities into different methods. The program uses a map<string, int> to associate each grocery item with its frequency, which provides a simple and efficient way to store and retrieve the information.
 I also split the project into GroceryTracker. h, GroceryTracker. cpp, and Main. cpp.h, GroceryTracker.cpp, and Main.cpp. This made the program easier to read and kept the main function from becoming overloaded with program logic. I also used descriptive variable and function names, added comments, included file-open checks, and added menu input validation.
+
 Areas for Improvement
+
 One improvement I could make would be making the item search case-insensitive. Currently, the search works best when the user enters the grocery item using the same capitalization found in the input file. Converting both the stored item and the user's search input to a consistent format would make the program more user-friendly.
 I could also improve error handling for input and output file issues. The current program checks whether a file can be opened, but a more advanced version could provide more detailed error messages or allow the user to select another file. These improvements would make the program more reliable and adaptable.
+
 Challenges and Resources
+
 One of the most challenging parts of the project was understanding how to combine file input and output with a map and a class. The program needed to read every grocery item from the input file, determine whether the item had already been encountered, increase its frequency, and then use the accumulated data throughout the rest of the program.
 I worked through these challenges by breaking the project into smaller steps and testing each part individually. I used zyBooks course material, Visual Studio's compiler and debugging tools, course resources, and ChatGPT for explanations, debugging support, and reviewing the program's organization. These resources helped me better understand how the different parts of the application worked together.
+
 Transferable Skills
+
 Several skills from this project will transfer directly to future programming courses and software development projects. These include object-oriented programming, using classes with public and private members, working with maps and other data structures, reading from and writing to files, validating user input, and breaking a larger problem into smaller functions.
 The project also gave me more experience testing a program against specific functional requirements. That skill will be important in future courses because writing code is only one part of software development. I also need to confirm that the program behaves correctly under different conditions.
+
 Maintainability, Readability, and Adaptability
+
 I made the program maintainable and readable by separating related responsibilities into different class methods and files. Main.cpp controls the menu and overall program flow, while the GroceryTracker class handles the grocery data and file operations. This separation makes it easier to locate and modify specific parts of the program.
 I also used meaningful names, comments, and small methods, each performing a specific task. Because the program is organized this way, I could add features later without rewriting the entire application. For example, the program could be expanded to support different input files, additional reports, improved search options, or a graphical interface.
